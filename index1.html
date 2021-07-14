@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Start here</title>
+</head>
+
+<body>
+  <div class="div1">
+    <section class="text">
+        <ul type="none">
+            <li><a href="index1.html"> Home</a></li>
+            <li><a href="#" onclick="getMostVisited()">Most visited</a></li>
+            <li><a href="#" onclick="getContact()">Contact</a></li>
+            <li><a href="#" onclick="getAbout()">About</a></li>
+        </ul>
+    </section>
+    <br>
+    <br>
+    <section class="text2">
+        <h1>WELCOME<sub> to</sub> TRAIN<sub> booking.</sub> </h1>
+    </section>
+    <br>
+    <section class="container">
+        <button type="button" class="btn btn-info btn-lg" ><a href="loginpage.php" class="text-light">Login</a></button>
+    </section>
+    <section class="container">
+        <button type="button" class="btn btn-success btn-lg "><a href="Signuppage.php" class="text-light">Sign up</a></button>
+    </section>
+  </div>
+    
+  <!--Ajax-->
+    <div id="MostVisited"></div>
+    <div id="Contact"></div>
+    <div id="About"></div>
+    <script>
+        function getMostVisited () {
+                var request = new XMLHttpRequest();
+                request.onreadystatechange = function() {
+                    if(this.readyState === 4 && this.status === 200) {
+                        document.getElementById("MostVisited").innerHTML = this.responseText;
+                    }
+                }
+                request.open("GET","Most visited.html",true);
+                request.send();
+            }
+        function getContact () {
+                var request = new XMLHttpRequest();
+                request.onreadystatechange = function() {
+                    if(this.readyState === 4 && this.status === 200) {
+                        document.getElementById("Contact").innerHTML = this.responseText;
+                    }
+                }
+                request.open("GET","Contact.html",true);
+                request.send();
+            }
+        function getAbout () {
+                var request = new XMLHttpRequest();
+                request.onreadystatechange = function() {
+                    if(this.readyState === 4 && this.status === 200) {
+                        document.getElementById("About").innerHTML = this.responseText;
+                    }
+                }
+                request.open("GET","About.html",true);
+                request.send();
+            }
+    </script>
+
+</body>
+
+</html>

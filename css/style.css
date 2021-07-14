@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+.TM
+{ margin-top:0;
+  margin-left:150px;
+  padding-top:20px;
+  background-color:#0009;
+  color:white;
+  width:800px;
+  height:450px;
+  text-align: center;
+ 
+}
+
+.div1{
+    background-image: url(../images/bg2.jpg);
+    background-size: cover;
+     height: 100%;
+   
+   
+}
+.text ul{
+    text-align: center;
+    height: 100px;
+}
+
+.text li{
+    display: inline-block;
+    padding-left: 45px;
+    margin-top: 9px;
+    font-size:23px;
+}
+
+
+.text2 h1{
+    text-align: center;
+    margin-top: 50px;
+    color: White;
+    font-size:80px;
+}
+
+.container{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn{
+    width:300px;
+}

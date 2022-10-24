@@ -3,7 +3,7 @@ This Web Application represents a Train Booking system. It is developed using HT
 It enables both the admin and the customer to sign up and login, Both Users can update their data, all main functions are performed by the admin such as adding train to the system and updating it, and adding a trip to the system and updating it. 
 The customer can only show the available seats for specific trip details and book it and he can cancel it also. 
 And there is a confirmation mail sent to him after booking and canceling his trip(s).
-Technologies used:
+Technologies and tools used:
 -Xampp for apache server and MySQL.
 -VScode IDE for all the languages we used (Server and client side).
 -Server-side languages →PHP (for the Interaction with the databases).
